@@ -14,14 +14,14 @@ info = soup.find_all('h5')
 
 oils = list(info)
 
+for div in info:
+    for a in div.find_all('a'):
+        print(a.get('href'))
+    
 
-print((type(oils[0])))
 
 
-for i in oils:
-    i = str(i)
 
-print((type(oils[0])))
 
 
 #for each_oil in info:
